@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta name="author" content="Davi Sales Barcelos">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="combustível, app, web, webapp, etanol">
+        <meta name="description" content="Aplicação para auxiliar o usuário a escolher abastecer o carro com gasolina ou etanol.">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <title>App Combustível</title>
+    </head>
+    <body>
+       <header>
+            <div class="cabecalho">
+            <h1>Qual combustível vale mais a pena ?</h1>
+            </div>
+            <hr> <br>
+       </header> 
+       <main>
+            <div id="result"></div> <br>
+            <div class="container">
+
+                <form onsubmit="return false">
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="Informe seu e-mail"> <br> <br>
+                    <label>Valor gasolina:</label> <br> <br>
+                    <label>R$</label>
+                    <input type="text" id="gasolina" placeholder="0,00"> <br> <br>
+                    <label>Valor etanol:</label> <br> <br>
+                    <label>R$</label>
+                    <input type="text" id="etanol" placeholder="0,00"> <br> <br>
+                    <button onclick="compararCombustivel()">Calcular</button>
+                </form>
+                
+            </div>
+       </main>
+
+       <script src="js/script.js"></script>
+    </body>
+</html>
